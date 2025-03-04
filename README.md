@@ -1,4 +1,4 @@
-# Firefly SSO OKTA Integration  
+# Firefly SSO Azure Integration  
 # ![Firefly Logo](firefly.gif)
 
 ### Prerequisites
