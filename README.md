@@ -37,7 +37,7 @@ module "firefly-demo" {
 | Variable   | Type          | Description                                                                                  | Example Value                  |
 |------------|--------------|----------------------------------------------------------------------------------------------|--------------------------------|
 | `domain`   | `string`      | The domain name of the company. This should match the domain configured in Azure AD.       | `"demo"`                |
-| `user_email` | `list(string)` | A list of email addresses for users that will be assigned to the application in Azure.   | `["user1@demo.com", "user2@demo.com"]` |
+| `user_emails` | `list(string)` | A list of email addresses for users that will be assigned to the application in Azure.   | `["user1@demo.com", "user2@demo.com"]` |
 
 ### Notes:
 - **`domain`**: Ensure this matches your organization's Azure AD domain for proper authentication.
