@@ -1,7 +1,12 @@
 variable "domain" {
-  type    = string
+  type = string
 }
 
-variable "user_email" {
-  type    = list(string)
+variable "user_emails" {
+  type = list(string)
+}
+
+variable "app_name" {
+  type    = string
+  default = "Firefly"
 }

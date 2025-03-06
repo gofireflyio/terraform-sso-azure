@@ -3,7 +3,7 @@ data "azuread_client_config" "current" {}
 resource "random_uuid" "role" {}
 
 resource "azuread_application" "firefly" {
-  display_name            = "Firefly"
+  display_name            = var.app_name
   logo_image              = filebase64("${path.module}/utility/logo.png")
   owners                  = [data.azuread_client_config.current.object_id]
   identifier_uris         = ["${local.identifier_uri}-${var.domain}"]
