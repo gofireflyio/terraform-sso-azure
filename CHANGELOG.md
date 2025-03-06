@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/gofireflyio/terraform-sso-azure/compare/v1.0.0...v1.1.0) (2025-03-06)
+
+
+### Features
+
+* 1.1.0 INFL-12899-azure-module ([015f7df](https://github.com/gofireflyio/terraform-sso-azure/commit/015f7dfda894183cdb135232ddd96ee75c2fbf07))
+
 ## 1.0.0 (2025-03-04)
 
 
