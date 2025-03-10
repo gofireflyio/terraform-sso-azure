@@ -15,7 +15,7 @@ Before using this module, ensure that you have the following:
 
 - **Azure Active Directory (AAD)**: An active Azure AD tenant with administrative privileges.
 - **Terraform**: Version 1.0 or higher.
-- **Random Terraform Provider**: Required for generating unique resource names when applicable.
+- **Random Terraform Provider**
 
 ## Example Usage
 
