@@ -14,6 +14,15 @@ resource "azuread_application" "firefly" {
     redirect_uris = ["${local.reply_url}-${var.domain}"]
   }
 
+  group_membership_claims = length(var.firefly_users_emails) == 0 ? ["ApplicationGroup"] : []
+
+  optional_claims {
+    saml2_token {
+      name                  = "groups"
+      additional_properties = length(var.firefly_users_emails) == 0 ? ["cloud_displayname"] : []
+    }
+  }
+
   feature_tags {
     enterprise            = true
     gallery               = false
@@ -42,6 +51,7 @@ resource "azuread_service_principal" "firefly-application" {
   }
 }
 
+// adds a certificate to the enterprise app
 resource "azuread_service_principal_token_signing_certificate" "firefly" {
   service_principal_id = azuread_service_principal.firefly-application.id
 }
