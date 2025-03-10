@@ -89,6 +89,7 @@ The following table outlines the variables available for this module:
 - Users specified in `firefly_users_emails` must already exist in Azure AD before running the Terraform configuration.
 - If `create_admins_group` or `create_viewers_group` is set to `true`, the module will create new groups unless `existing_admins_group_name` or `existing_viewers_group_name` is provided.
 - To configure SCIM provisioning, please contact the Firefly team for further instructions.
+- If you are managing assignments via groups and have customized group names, please provide the exact names to the Firefly team to ensure proper configuration.
 
 
 
