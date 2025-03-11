@@ -51,7 +51,6 @@ resource "azuread_service_principal" "firefly-application" {
   }
 }
 
-// adds a certificate to the enterprise app
 resource "azuread_service_principal_token_signing_certificate" "firefly" {
   service_principal_id = azuread_service_principal.firefly-application.id
 }
