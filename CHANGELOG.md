@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0](https://github.com/gofireflyio/terraform-sso-azure/compare/v1.2.0...v1.3.0) (2025-03-11)
+
+
+### Features
+
+* 1.3.0 ([3d4ff16](https://github.com/gofireflyio/terraform-sso-azure/commit/3d4ff161247b620677b3bcdb4a93206fb00e87fc))
+
 ## [1.2.0](https://github.com/gofireflyio/terraform-sso-azure/compare/v1.1.0...v1.2.0) (2025-03-10)
 
 
