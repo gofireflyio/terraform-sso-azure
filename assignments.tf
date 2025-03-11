@@ -13,7 +13,7 @@ resource "azuread_app_role_assignment" "firefly-users" {
 
 // existing groups
 data "azuread_group" "existing-admins-group" {
-  count            = length(var.existing_admins_group_name) > 0 && length(var.firefly_users_emails) > 0 && !var.create_admins_group && !var.create_viewers_group ? 1 : 0
+  count            = length(var.existing_admins_group_name) > 0 && length(var.firefly_users_emails) == 0 && !var.create_admins_group && !var.create_viewers_group ? 1 : 0
   display_name     = var.existing_admins_group_name
   security_enabled = true
 }
